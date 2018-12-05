@@ -640,10 +640,16 @@
                 </div>
                 <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
-            <p>&copy; Bookeepers - Todos os direitos reservados 2018</p>
+            <p>&copy; Bookeepers - Todos os direitos reservados - <span id="year"></span></p>
         </div>
     </section>
 
+    <script>
+        window.onload = function(){
+            var date = new Date().getFullYear();
+            document.getElementById("year").innerHTML = date;
+        }
+    </script>
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Popper.js -->
